@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIBUTE WEBSITE ON STEPHEN HAWKING</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('bg.jpg') center/cover no-repeat;
+            font-family: 'Indie Flower', cursive;
+            color: #f0f0f0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top_section {
+            background-color: rgba(45, 59, 85, 0.8);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .top_section h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #ffa07a;
+        }
+        
+        .img_container img {
+            border: 2px solid #ffa07a;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .about_section,
+        .biography_section,
+        .Awards,
+        .Wikipedia_link {
+            background-color: rgba(45, 59, 85, 0.8);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px; /* Add margin for spacing */
+        }
+
+        .biography_section h3,
+        .Awards h3,
+        .about_section h2 {
+            color: #ffa07a;
+        }
+
+        .Wikipedia_link a {
+            color: #87CEEB;
+            text-align: center; /* Center the link */
+        }
+
+        li button {
+            background: #ffa07a;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 14px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        li button:hover {
+            background: #2d3b55;
+        }
+
+        img {
+            border: 2px solid #ffa07a;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <section class="top_section">
+                <div class="img_container">
+                    <img src="pic.jpeg" alt="STEPHEN HAWKING PHOTO">
+                </div>
+                <div>
+                    <h1>STEPHEN HAWKING</h1>
+                    <h4>Theoretical Physicist</h4>
+                    <div class="about_section">
+                        <h2>"Cosmic Explorer"</h2>
+                        <p><b>Stephen Hawking</b> was not only a theoretical physicist but also a brilliant cosmologist, author, and science communicator. Born in 1942 in Oxford, England, he overcame the challenges of motor neuron disease to make groundbreaking contributions to our understanding of the universe. His popular science books, including "A Brief History of Time," have inspired millions to explore the mysteries of the cosmos.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="biography_section">
+                <h3>Know More...</h3>
+                <ul>
+                    <li><button onclick="window.open('https://en.wikipedia.org/wiki/Stephen_Hawking');">Wikipedia: Stephen Hawking</button></li>
+                    <li><button onclick="window.open('https://www.newscientist.com/article/2053929-a-brief-history-of-stephen-hawking-a-legacy-of-paradox/');">Biography.com: Stephen Hawking</button></li>
+                    <li><button onclick="window.open('https://www.hawking.org.uk/');">Official Website: Stephen Hawking</button></li>
+                    <li><button onclick="window.open('https://www.space.com/15923-stephen-hawking.html');">Space.com: Stephen Hawking</button></li>
+                    <li><button onclick="window.open('https://www.bbc.com/news/uk-43396008');">BBC News: Stephen Hawking</button></li>
+                </ul>
+            </section>
+            <section class="Awards">
+                <h3> Accolades</h3>
+                <ul>
+                    <li>1988: Companion of Honour</li>
+                    <li>2006: Copley Medal</li>
+                    <li>2009: Presidential Medal of Freedom</li>      
+                    <li>2012: Fundamental Physics Prize</li>
+                    <li>2018: Breakthrough Prize in Fundamental Physics</li>       
+                </ul>
+            </section>
+            <section class="Wikipedia_link">
+                <h5>Read more about STEPHEN HAWKING <a href="https://en.wikipedia.org/wiki/Stephen_Hawking">Wikipedia</a></h5>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
